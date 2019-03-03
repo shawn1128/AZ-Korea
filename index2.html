@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+<head>
+<title>A&Z Korea</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="A&Z Korea 代購" />
+<meta name="keywords" content="A&Z Korea 代購" />
+<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.dropotron.min.js"></script>
+<script src="js/jquery.slidertron.min.js"></script>
+<script src="js/jquery.poptrox.min.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/skel-layers.min.js"></script>
+<script src="js/init.js"></script>
+<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+<script>
+			window.addEventListener("load",function() {  
+				setTimeout(function(){
+				window.scrollTo(0, 1); }, 10);
+			});
+		</script>
+</head>
+<body class="homepage">
+
+<div id="wrapper">
+
+<div id="header-wrapper">
+
+<div id="header" class="container">
+
+<div id="logo">
+<h1>A&Z Korea <span></span></h1>
+</div>
+
+
+<nav id="nav">
+<ul>
+<li><a href="index.html">A 小物/一般服飾類</a></li>
+<li class="active"><a href="index2.html">B.冬天外套/靴子類 </a></li>
+</ul>
+</nav>
+
+</div>
+</div>
+
+<div id="main-wrapper">
+
+<div id="main" class="container">
+<div class="row">
+
+<div id="content" class="12u">
+<div id="slider" style="background: #F1F1F1;"> 
+<div class="viewer">
+<div class="reel">
+<div class="slide">
+
+<div id="contact" style="margin-left: 20px;">
+<form style="padding-right: 70px;">
+<p style="margin-top:20px;">韓網代購金額換算</p>
+<div style="margin-bottom:40px;position:relative;">
+<p>韓元</p>
+<input id="money1" name="name" placeholder="KR₩" type="number" class="text" onkeyup="value=value.replace(/[^\d]/g,'');">
+</div>
+<hr>
+<div style="margin-top: 30px;">
+<p>代購價格</p>
+<input id="money2" name="name" placeholder="NT$" type="text" class="text" onkeyup="value=value.replace(/[^\d]/g,'') " disabled>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="actions"><img src="images/logo.png" style="border-radius:10px;" alt="A&Z Korea"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer-wrapper" class="container">
+
+<div id="footer">
+<ul class="contact">
+<li><a href="https://www.facebook.com/2018azshop/" class="fab fa-facebook"></a></li>
+<li><a href="https://instagram.com/az_shop_/" class="fab fa-instagram"></a></li>
+
+</ul>
+</div>
+
+<div id="copyright">
+<span>Copyright &copy; A&Z Korea. 2019 All rights reserved. </span>
+</div>
+</div>
+</div>
+</body>
+<script>
+		$('#money1').on('input', function() {
+			t = $('#money1').val()
+			if(t == ''){
+				t = 0
+			}else{
+				t = (0.036*t+120).toFixed(1);
+			}
+			
+			$('#money2').val( parseInt(t).toLocaleString() );
+		});
+	</script>
+</html>
